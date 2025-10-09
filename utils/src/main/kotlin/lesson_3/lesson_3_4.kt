@@ -1,13 +1,13 @@
 package org.example.utils.lesson_3
 
 fun main(){
-    var откуда = "Е2"
-    var куда = "Е4"
-    var номерХода = "1"
-    var ход =("[$откуда-$куда;$номерХода]")
-    println(ход)
-    откуда = "D2"
-    куда = "D3"
-    ход =("[$откуда-$куда;$номерХода]")
-    println(ход)
+    var where = "Е2"
+    var step  = "Е4"
+    var numberMove = "1"
+    var move = ("[$where-$step;$numberMove]")
+    println(move)
+    where = "D2"
+    step = "D3"
+    move =("[$where-$step;$numberMove]")
+    println(move)
 }
