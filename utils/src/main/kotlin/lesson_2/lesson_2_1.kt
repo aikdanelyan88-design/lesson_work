@@ -1,10 +1,11 @@
 package org.example.utils.lesson_2
 
-fun main(){
-    val a = 3
-    val b = 4
-    val c = 3
-    val d = 5
-    val x = (a+d+b+c)/4.0
-    println(x)
+fun main() {
+    val Tom = 3F
+    val Bob = 4F
+    val Aik = 3F
+    val Joe = 5F
+    val students = 4
+    val gpa = (Tom + Bob + Aik + Joe) / students
+    println(gpa)
 }
