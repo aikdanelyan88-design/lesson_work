@@ -2,14 +2,16 @@ package org.example.utils.lesson_2
 
 import java.time.temporal.TemporalAmount
 
-fun  main(){
-    val hours1 = 9
-    val minutes1 = 39
+const val ONE_HOURS = 60
+fun main() {
+    val hours = 9
+    val minutes = 39
     val minutesRoad = 457
-    val totalHours = minutesRoad / 60
-    val totalMinutes = minutesRoad % 60
-    val totalminutes2 = (minutes1 + totalMinutes) % 60
-    val wholeHours = (minutes1 + totalMinutes) / 60
-    val totalhours2 = (hours1 + totalHours + wholeHours )
-    println("$totalhours2:$totalminutes2")
+    val totalHoursRoad = minutesRoad / ONE_HOURS
+    val totalMinutesRoad = minutesRoad % ONE_HOURS
+    val sumMinutes = minutes + totalMinutesRoad
+    val totalminutes = sumMinutes % ONE_HOURS
+    val wholeHours = sumMinutes / ONE_HOURS
+    val totalhours = hours + totalHoursRoad + wholeHours
+    println("$totalhours:$totalminutes")
 }
