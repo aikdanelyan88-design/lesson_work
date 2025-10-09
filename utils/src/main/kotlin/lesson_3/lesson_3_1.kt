@@ -1,11 +1,11 @@
 package org.example.utils.lesson_3
 
-fun  main(){
+fun main() {
     val name = "Aik"
     val day = "Добрый день!"
     val night = "Добрый вечер!"
-    val x = ( day + name)
-    val z = (night + name)
-    println(x)
-    println(z)
+    var greetingsDay = day + name
+    val greetingsNight = (night + name)
+    println(greetingsDay)
+    println(greetingsNight)
 }
