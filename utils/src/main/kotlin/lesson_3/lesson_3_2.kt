@@ -5,8 +5,8 @@ fun main() {
     var surname = "Андреева"
     var age = 20
     val patronymic = "Сергеевна"
-    println("$surname $name $patronymic, $age")
+    println("$surname $name $patronymic,$age")
     surname = "Сидорова"
     age = 22
-    println("$surname $name $patronymic, $age")
+    println("$surname $name $patronymic,$age")
 }
