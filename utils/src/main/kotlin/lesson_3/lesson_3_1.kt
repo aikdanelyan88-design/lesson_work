@@ -4,10 +4,11 @@ fun main() {
     val name = "Aik"
     val day = "Добрый день"
     val night = "Добрый вечер"
-    val sign = ':'
-    var greetingsDay = (day + sign + name)
-    val greetingsNight = (night + sign + name)
+    var greetings = ("$day: $name")
 
-    println(greetingsDay)
-    println(greetingsNight)
+    println(greetings)
+
+    greetings = ("$night: $name")
+
+    println(greetings)
 }
