@@ -10,6 +10,6 @@ fun main() {
     val minutes = remainingSecondsAfterHours / DIVIDER
     var seconds = remainingSecondsAfterHours % DIVIDER
     val formattedSeconds = String.format("%02d", seconds)
-    println("$formattedHours:$minutes:$formattedSeconds")
 
+    println("$formattedHours:$minutes:$formattedSeconds"
 }
