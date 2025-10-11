@@ -8,5 +8,6 @@ fun main() {
 
     where = "D2"
     step = "D3"
+    numberMove = "2"
     println("[$where-$step;$numberMove]")
 }
