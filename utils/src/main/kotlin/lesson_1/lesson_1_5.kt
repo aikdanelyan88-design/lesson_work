@@ -2,7 +2,7 @@ package org.example.utils.lesson_1
 
 const val DIVIDER  = 60
 
-fun main(){
+fun main() {
     val totalSeconds = 6480
     var hours = totalSeconds / (DIVIDER*DIVIDER)
     val formattedHours = String.format("%02d",hours)
