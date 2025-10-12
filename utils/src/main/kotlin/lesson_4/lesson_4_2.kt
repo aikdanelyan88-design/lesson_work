@@ -5,8 +5,15 @@ fun main() {
     val firstCargoVolume = 80
     val secondCargoWeight = 50
     val secondCargoVolume = 100
-    println(("Груз с весом 20кг и объемом 80л соответствует категории 'Average':") + ((firstCargoWeight > MINIMUM_WEIGHT_AVERAGE) && (firstCargoWeight <= MAKSIMUM_WEIGHT_AVERAGE) && (firstCargoVolume < MAKSIMUM_VOLUME_AVERAGE)))
-    println(("Груз с весом 50кг и объемом 100л соответствует категории 'Average':") + ((secondCargoWeight > MINIMUM_WEIGHT_AVERAGE) && (secondCargoWeight <= MAKSIMUM_WEIGHT_AVERAGE) && (secondCargoVolume < MAKSIMUM_VOLUME_AVERAGE)))
+    var conditions =
+        (firstCargoWeight > MINIMUM_WEIGHT_AVERAGE) && (firstCargoWeight <= MAKSIMUM_WEIGHT_AVERAGE) && (firstCargoVolume < MAKSIMUM_VOLUME_AVERAGE)
+
+    println("Груз с весом 20кг и объемом 80л соответствует категории 'Average': $conditions")
+
+    conditions =
+        (secondCargoWeight > MINIMUM_WEIGHT_AVERAGE) && (secondCargoWeight <= MAKSIMUM_WEIGHT_AVERAGE) && (secondCargoVolume < MAKSIMUM_VOLUME_AVERAGE)
+
+    println("Груз с весом 50кг и объемом 100л соответствует категории 'Average': $conditions")
 }
 
 const val MINIMUM_WEIGHT_AVERAGE = 35
