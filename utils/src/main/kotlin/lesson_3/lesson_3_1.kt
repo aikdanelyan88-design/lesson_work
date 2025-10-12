@@ -4,7 +4,7 @@ fun main() {
     val name = "Aik"
     val day = "Добрый день"
     val night = "Добрый вечер"
-    var greetings = "$day: $name
+    var greetings = "$day: $name"
 
     println(greetings)
 
