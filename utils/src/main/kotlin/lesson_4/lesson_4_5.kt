@@ -19,14 +19,8 @@ fun main() {
     val isWeatherGood = readln().toBoolean()
 
     val condition =
-        (!hasDamage &&
-                (crew in MINIMUM_CREW..MAKSIMAL_CREW) &&
-                (boxesOfProvision > MINIMUM_BOXES) &&
-                (isWeatherGood || !isWeatherGood)) ||
-                (hasDamage &&
-                        (crew == MAKSIMAL_CREW) &&
-                        isWeatherGood &&
-                        (boxesOfProvision >= MINIMUM_BOXES))
+        (!hasDamage && (crew in MINIMUM_CREW..MAKSIMAL_CREW) && (boxesOfProvision > MINIMUM_BOXES) && (isWeatherGood || !isWeatherGood)) ||
+                (hasDamage && (crew == MAKSIMAL_CREW) && isWeatherGood && (boxesOfProvision >= MINIMUM_BOXES))
 
     println("Корабль может отправляться в плавание: $condition")
 
