@@ -1,12 +1,15 @@
 package org.example.utils.lesson_5
 
-const val RESULT_TASK = 6
+const val NUMBER_ONE = 3
+const val NUMBER_TWO = 4
 
 fun main() {
 
-    val userAge = readln().toInt()
+    print("Пройдите капчу: $NUMBER_ONE + $NUMBER_TWO = ")
+    val userNumber = readln().toInt()
+    val result = NUMBER_ONE + NUMBER_TWO
 
-    val resultText = if (userAge == RESULT_TASK) {
+    val resultText = if (userNumber == result) {
         "Добро пожаловать!"
     } else {
         "Доступ запрещен!"
