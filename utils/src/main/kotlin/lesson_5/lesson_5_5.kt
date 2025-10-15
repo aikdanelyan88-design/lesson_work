@@ -7,7 +7,6 @@ const val MAKSIMUM_NUMBER = 42
 
 fun main() {
 
-    val random = Random
     val randomNumbers = (MINIMUM_NUMBER..MAKSIMUM_NUMBER).shuffled().take(3)
 
     print("Введите первое число от 0 до 42:")
